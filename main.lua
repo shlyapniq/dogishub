@@ -96,12 +96,21 @@ local Troll = Window:NewTab("Тролл скрипты")
                          
                               end)
                
+               hatss:NewButton("Инвалидная Коляска (r6) (OWN) ", "Скрипт на Инвалидную коляску ", function()
+                       
+                       
+                     
+                       wait(1)
+                       
+                                                loadstring(game:HttpGetAsync("https://pastebin.com/raw/mDXVAe4e"))()
+                         
+                         
+                              end)
                
                
+              
                
-               
-               
-               
+              
                
                
                
@@ -146,11 +155,5 @@ local adm = Window:NewTab("Админы")
                        end)
                           
                           
-                       adm1:NewButton(" Мусорное ведро (R6) ", "Превращяет вас в Мусорное ведро", function()
                        
-                   
-                                     loadstring(game:HttpGetAsync("https://hastebin.com/raw/yabojojeju"))()
-                         
-                         
-                              end)
                
