@@ -74,3 +74,19 @@ local A = Z.Button({
         end
     }
 })
+
+
+local A = Z.Button({
+    Text = "Creepy Arms",
+    Callback = function()
+        
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/dogi12/dogishub/main/thtdght.lua'))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Long Arms Demon."
+            })
+        end
+    }
+})
