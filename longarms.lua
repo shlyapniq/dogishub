@@ -84,6 +84,9 @@ function Debounces:GetProgressPercentage()
 	end
 end
 
+--print("1")
+
+
 local CF = {N=CFrame.new,A=CFrame.Angles,fEA=CFrame.fromEulerAnglesXYZ}
 local V3 = {N=Vector3.new}
 local M = {C=math.cos,R=math.rad,S=math.sin,P=math.pi,RNG=math.random,MRS=math.randomseed,H=math.huge}
@@ -96,6 +99,8 @@ end
 
 pcall(game.Destroy,char:FindFirstChild'Animate')
 pcall(game.Destroy,hum:FindFirstChild'Animator')
+
+print("2")
 
 -- Sounds
 Sounds['Wet'] = {Id=256738023,Loop=false,Pitch=1}
@@ -129,6 +134,7 @@ local NewInstance = function(instance,parent,properties)
 	return inst;
 end
 
+print("3")
 
 ArtificialHB = NewInstance("BindableEvent", script,{
 	Parent = script,
@@ -216,17 +222,9 @@ function UnbindLoops()
 end;
 
 UnbindLoops() -- Just so if the loops already exist from previously running a script using this template, there's no errors
-
+print("4")
 -- Joints, etc
-char:WaitForChild'Body Colors':destroy()
-swait(30)
-for _,v in next, char:children() do
-	if(v:IsA'BasePart')then
-		v.Color = Color3.new(0,0,0)
-	end
-end
-ClearChildrenWithClass(char,"Clothing")
-ClearChildrenWithClass(char,"Decal",true)
+
 if(PlayerSize ~= 1)then
 	for _,v in next, char:GetDescendants() do
 		if(v:IsA'BasePart' and v ~= head)then
@@ -237,7 +235,7 @@ end
 
 
 -- Model
-
+print("5")
 local Music = sndFromData(Sounds.Creep,torso) -- incase u want music
 Music.MaxDistance = 150
 Music:Play()
@@ -252,7 +250,7 @@ New = function(Object, Parent, Name, Data)
 	return Object
 end
 	
-
+print("6")
 RightHand = New("Model",char,"RightHand",{})
 RightThumb3 = New("Part",RightHand,"RightThumb3",{BrickColor = BrickColor.new("Institutional white"),Size = Vector3.new(0.506300628, 0.122097097, 0.0965319052),CFrame = CFrame.new(-2.88806152, 3.8542099, 40.4611397, -0.556201279, 0.830963016, -0.0114059215, -0.77162528, -0.511289954, 0.37838766, 0.308594495, 0.219260782, 0.925572097),BottomSurface = Enum.SurfaceType.Smooth,TopSurface = Enum.SurfaceType.Smooth,Color = Color3.new(0,0,0),})
 Mesh = New("SpecialMesh",RightThumb3,"Mesh",{MeshType = Enum.MeshType.Sphere,})
