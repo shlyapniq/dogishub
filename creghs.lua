@@ -132,7 +132,6 @@ s.Pitch = 1
 s.Volume = 1
 s.Looped = true
 wait(0.1)
-s:play()
 
 o1.Name = "Drone"
 o1.Parent = game.Players.LocalPlayer.Character.Reanimate
@@ -1170,7 +1169,7 @@ s.Pitch = 1
 s.Volume = 2
 s.Looped = true
 wait(0.1)
-s:play()
+
 
 
 
@@ -1438,7 +1437,7 @@ function cMsg(c)
 				s.SoundId = "rbxassetid://418252437"
 				s.Volume = 1
 				s.Pitch = 1
-				s:Play()
+				
 				game.Debris:AddItem(s,2)
 			end
 			wait()
@@ -1561,7 +1560,7 @@ mouse.Button1Down:connect(function()
 					trace.CFrame = CFrame.new(o1.Smg.SMGPipeH.CFrame.p,pos)*CFrame.new(0,0,-((o1.Smg.SMGPipeH.CFrame.p - pos).Magnitude/2))
 					local s = Instance.new("Sound",o1.Smg.SMGPipeH)
 					s.SoundId = "rbxassetid://131257506"
-					s:Play()
+				
 					spawn(function()
 						wait(2)
 						s:Destroy()
