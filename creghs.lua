@@ -1327,10 +1327,10 @@ seat.CanCollide = false
 
 local soisoi = Instance.new("Sound",o1.Controller)
 soisoi.SoundId = "rbxassetid://151800925"
-soisoi.Volume = 0.3
+soisoi.Volume = 0
 soisoi.Pitch = 3
 soisoi.Looped = true
-soisoi:Play()
+
 
 o1:FindFirstChild("Rotor1").PrimaryPart = o1:FindFirstChild("Rotor1").Main
 o1:FindFirstChild("Rotor2").PrimaryPart = o1:FindFirstChild("Rotor2").Main
